@@ -10,7 +10,7 @@ signals = [".",
            "Urgent - update all anti-virus systems",
            "Please re-send meteorological data",
            "234724u2u23u888",
-           ".."
+           "..", 
            "asjdha## djhaidj# ddjiadj#",
            "Medical officer requested at main base",
            " %",
@@ -20,10 +20,11 @@ signals = [".",
            "-"]
 
 good_signals = []
+bad_signals = []
 
 for item in signals:
-    print(item)
-    good = input("Is this a good signal? (Y/N)")
-    if good == "Y":
+    if len(item)>2 and " " in item:
         good_signals.append(item)
-print(good_signals)
+
+print("These are the good signals" , good_signals)
+
